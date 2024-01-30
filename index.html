@@ -43,8 +43,8 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-const marker = L.marker([51.5, -0.09]).addTo(map)
-		.bindPopup('<b>Hello world!</b><br />I am a popup GeoGator.').openPopup();
+const marker = L.marker([29.6436, -82.3549]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
 
 	const circle = L.circle([51.508, -0.11], {
 		color: 'red',
@@ -62,7 +62,7 @@ const marker = L.marker([51.5, -0.09]).addTo(map)
 
 	const popup = L.popup()
 		.setLatLng([51.513, -0.09])
-		.setContent('I am a standalone popup.')
+		.setContent('I am a standalone popup GeoGator.')
 		.openOn(map);
 
 	function onMapClick(e) {
